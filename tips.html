@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips & Tricks - Alliance Tower Defense Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gaming: {
+                            dark: '#0f0f1a',
+                            darker: '#080810',
+                            accent: '#ff6b35',
+                            secondary: '#f7931e',
+                            highlight: '#ff4444',
+                            card: '#1a1a2e',
+                            border: '#2d2d44'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #0f0f1a 100%);
+        }
+        .glow-text {
+            text-shadow: 0 0 10px #ff6b35, 0 0 20px #ff6b35, 0 0 30px #f7931e;
+        }
+        .glow-box {
+            box-shadow: 0 0 15px rgba(255, 107, 53, 0.3), inset 0 0 15px rgba(255, 107, 53, 0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(255, 107, 53, 0.5);
+        }
+    </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body class="min-h-screen text-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gaming-darker border-b border-gaming-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <a href="index.html" class="text-2xl font-bold text-gaming-accent glow-text">ATD Wiki</a>
+                <div class="flex flex-wrap gap-6">
+                    <a href="index.html" class="text-gray-300 hover:text-gaming-accent transition">Home</a>
+                    <a href="heroes.html" class="text-gray-300 hover:text-gaming-accent transition">Heroes</a>
+                    <a href="strategy.html" class="text-gray-300 hover:text-gaming-accent transition">Strategy</a>
+                    <a href="tips.html" class="text-gaming-secondary hover:text-gaming-accent transition font-semibold">Tips</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-gaming-accent/20 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 py-16 relative">
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-gaming-accent glow-text mb-4">Tips & Tricks</h1>
+            <p class="text-center text-gray-400 max-w-2xl mx-auto">Essential advice for beginners and advanced techniques for seasoned players.</p>
+        </div>
+    </header>
+
+    <!-- Beginner Tips -->
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+            <span class="text-3xl">🌟</span> Beginner Tips
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <h3 class="text-xl font-bold text-gaming-secondary mb-4">Getting Started</h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">1.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Focus on one hero first</strong>
+                            <p class="text-sm mt-1">Don't spread resources thin. Level up your best starter hero to max before investing in others.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">2.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Complete daily missions</strong>
+                            <p class="text-sm mt-1">Daily missions provide steady coin income and gem bonuses. Always complete all 3 daily missions.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">3.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Play Normal difficulty to grind</strong>
+                            <p class="text-sm mt-1">Normal mode offers the best coin-per-minute ratio for progression. Save Hard/Nightmare for when you're stronger.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <h3 class="text-xl font-bold text-gaming-secondary mb-4">Unit Deployment</h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">1.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Watch monster paths</strong>
+                            <p class="text-sm mt-1">Before placing units, observe where monsters walk. Place units where they'll get the most hits.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">2.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Upgrade before wave ends</strong>
+                            <p class="text-sm mt-1">Use the time between waves to upgrade key units. Plan your upgrades so you're ready before the next wave.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">3.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Don't sell early units</strong>
+                            <p class="text-sm mt-1">Early units may seem weak but they build the foundation. You can always add more units later.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Tips -->
+    <section class="bg-gaming-darker py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+                <span class="text-3xl">🚀</span> Advanced Tips
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gaming-card border border-gaming-accent rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-gaming-secondary mb-4">Optimization Techniques</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex gap-3">
+                            <span class="text-gaming-highlight">★</span>
+                            <div>
+                                <strong class="text-gaming-accent">Perfect unit spacing</strong>
+                                <p class="text-sm mt-1">Place units just outside each other's range to avoid overlap and maximize total coverage area.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gaming-highlight">★</span>
+                            <div>
+                                <strong class="text-gaming-accent">Wave skipping</strong>
+                                <p class="text-sm mt-1">In late game, use gems to skip easy waves and save time. Each skip costs 10 gems but saves ~2 minutes.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gaming-highlight">★</span>
+                            <div>
+                                <strong class="text-gaming-accent">Hero ability timing</strong>
+                                <p class="text-sm mt-1">Save hero ultimates for when multiple dangerous enemies are clustered or during boss waves.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gaming-card border border-gaming-accent rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-gaming-secondary mb-4">Resource Maxing</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex gap-3">
+                            <span class="text-gaming-highlight">★</span>
+                            <div>
+                                <strong class="text-gaming-accent">Gem spending priority</strong>
+                                <p class="text-sm mt-1">Gems → Guaranteed S-tier pull (1200) > Unit slots > Energy refresh > Skips</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gaming-highlight">★</span>
+                            <div>
+                                <strong class="text-gaming-accent">Star upgrade farming</strong>
+                                <p class="text-sm mt-1">Run Easy mode repeatedly to farm duplicates. Duplicates are crucial for star upgrades.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gaming-highlight">★</span>
+                            <div>
+                                <strong class="text-gaming-accent">Leaderboard grinding</strong>
+                                <p class="text-sm mt-1">Play during off-peak hours for easier top 100 placement. Weekend mornings are best.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pro Tips -->
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+            <span class="text-3xl">💎</span> Pro Tips
+        </h2>
+        <div class="bg-gaming-card border-2 border-gaming-accent rounded-xl p-8 glow-box">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl mb-3">🎯</div>
+                    <h3 class="text-lg font-bold text-gaming-secondary mb-2">Precise Timing</h3>
+                    <p class="text-gray-400 text-sm">Activate hero abilities 3 seconds before monsters enter unit range for maximum uptime.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl mb-3">🔄</div>
+                    <h3 class="text-lg font-bold text-gaming-secondary mb-2">Rotation Strategy</h3>
+                    <p class="text-gray-400 text-sm">Keep 2 hero teams rotating. When one uses ultimate, switch to the other for continuous pressure.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl mb-3">🛡️</div>
+                    <h3 class="text-lg font-bold text-gaming-secondary mb-2">Shield Management</h3>
+                    <p class="text-gray-400 text-sm">Arcane Guardian shield lasts 15 seconds. Re-apply 2 seconds before expiry for seamless protection.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl mb-3">⚡</div>
+                    <h3 class="text-lg font-bold text-gaming-secondary mb-2">Speed Boost Stacking</h3>
+                    <p class="text-gray-400 text-sm">Use two Frost Wardens to stack 60% slow effect. Monsters barely move through your kill zone.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl mb-3">💰</div>
+                    <h3 class="text-lg font-bold text-gaming-secondary mb-2">Coin Efficiency</h3>
+                    <p class="text-gray-400 text-sm">A single max-level AoE unit beats three low-level units. Always max primary damage dealers first.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl mb-3">👹</div>
+                    <h3 class="text-lg font-bold text-gaming-secondary mb-2">Titan Priority</h3>
+                    <p class="text-gray-400 text-sm">Titans deal 50x normal damage. If you can't kill one in 10 seconds, you're not ready for Nightmare.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Reference -->
+    <section class="bg-gaming-darker py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+                <span class="text-3xl">📋</span> Quick Reference
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gaming-card border border-gaming-border rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-gaming-secondary mb-4">Emoji Guide</h3>
+                    <div class="space-y-3 text-gray-400 text-sm">
+                        <div class="flex justify-between">
+                            <span>Daily Missions</span>
+                            <span class="text-gaming-accent">3 per day</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Gems per day (active)</span>
+                            <span class="text-gaming-accent">~50</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Guaranteed S-tier pull</span>
+                            <span class="text-gaming-accent">1200 gems</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Max unit level</span>
+                            <span class="text-gaming-accent">30</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Max hero stars</span>
+                            <span class="text-gaming-accent">6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gaming-card border border-gaming-border rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-gaming-secondary mb-4">Common Mistakes to Avoid</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-start gap-2">
+                            <span class="text-gaming-highlight">✗</span>
+                            <span>Selling starter units too early</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-gaming-highlight">✗</span>
+                            <span>Spreading upgrades across all units</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-gaming-highlight">✗</span>
+                            <span>Using gems on regular gacha pulls</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-gaming-highlight">✗</span>
+                            <span>Ignoring the leaderboard for rewards</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-gaming-highlight">✗</span>
+                            <span>Not upgrading unit attack speed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gaming-darker border-t border-gaming-border py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gaming-accent font-bold text-xl mb-2">Alliance Tower Defense Wiki</p>
+            <p class="text-gray-500 text-sm mb-4">Your ultimate guide to conquering the monster horde</p>
+            <p class="text-gray-600 text-xs">Not affiliated with Roblox Corporation. Fan-made wiki site.</p>
+        </div>
+    </footer>
+</body>
+</html>

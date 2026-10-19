@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes - Alliance Tower Defense Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gaming: {
+                            dark: '#0f0f1a',
+                            darker: '#080810',
+                            accent: '#ff6b35',
+                            secondary: '#f7931e',
+                            highlight: '#ff4444',
+                            card: '#1a1a2e',
+                            border: '#2d2d44'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #0f0f1a 100%);
+        }
+        .glow-text {
+            text-shadow: 0 0 10px #ff6b35, 0 0 20px #ff6b35, 0 0 30px #f7931e;
+        }
+        .glow-box {
+            box-shadow: 0 0 15px rgba(255, 107, 53, 0.3), inset 0 0 15px rgba(255, 107, 53, 0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(255, 107, 53, 0.5);
+        }
+        .tier-s { background: linear-gradient(135deg, #ffd700, #ffaa00); }
+        .tier-a { background: linear-gradient(135deg, #c0c0c0, #a0a0a0); }
+        .tier-b { background: linear-gradient(135deg, #cd7f32, #b5651d); }
+        .tier-c { background: linear-gradient(135deg, #6b8e23, #556b2f); }
+    </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body class="min-h-screen text-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gaming-darker border-b border-gaming-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <a href="index.html" class="text-2xl font-bold text-gaming-accent glow-text">ATD Wiki</a>
+                <div class="flex flex-wrap gap-6">
+                    <a href="index.html" class="text-gray-300 hover:text-gaming-accent transition">Home</a>
+                    <a href="heroes.html" class="text-gaming-secondary hover:text-gaming-accent transition font-semibold">Heroes</a>
+                    <a href="strategy.html" class="text-gray-300 hover:text-gaming-accent transition">Strategy</a>
+                    <a href="tips.html" class="text-gray-300 hover:text-gaming-accent transition">Tips</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-gaming-accent/20 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 py-16 relative">
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-gaming-accent glow-text mb-4">Hero Tier List</h1>
+            <p class="text-center text-gray-400 max-w-2xl mx-auto">Discover the best heroes in Alliance Tower Defense. Learn which heroes excel in different game modes and strategies.</p>
+        </div>
+    </header>
+
+    <!-- Tier Legend -->
+    <section class="max-w-7xl mx-auto px-4 pb-8">
+        <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded tier-s flex items-center justify-center text-gaming-dark font-bold text-sm">S</span>
+                <span class="text-gray-300">S-Tier: Meta-defining, must have</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded tier-a flex items-center justify-center text-gaming-dark font-bold text-sm">A</span>
+                <span class="text-gray-300">A-Tier: Excellent performers</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded tier-b flex items-center justify-center text-gaming-dark font-bold text-sm">B</span>
+                <span class="text-gray-300">B-Tier: Solid choices</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded tier-c flex items-center justify-center text-gaming-dark font-bold text-sm">C</span>
+                <span class="text-gray-300">C-Tier: situational use</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- S-Tier Heroes -->
+    <section class="max-w-7xl mx-auto px-4 py-8">
+        <div class="flex items-center gap-3 mb-6">
+            <span class="w-12 h-12 rounded tier-s flex items-center justify-center text-gaming-dark font-bold text-xl">S</span>
+            <h2 class="text-3xl font-bold text-gaming-accent">S-Tier Heroes</h2>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gaming-card border-2 border-yellow-500/50 rounded-xl p-6 card-hover transition-all duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-gaming-secondary">Shadow Striker</h3>
+                    <span class="text-xs bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded">Legendary</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">High burst damage dealer with critical strike abilities. Excels against single targets and bosses.</p>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Damage:</span>
+                        <span class="text-gaming-highlight">★★★★★</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Survivability:</span>
+                        <span class="text-gaming-accent">★★★☆☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Utility:</span>
+                        <span class="text-gaming-accent">★★★☆☆</span>
+                    </div>
+                </div>
+                <div class="mt-4 p-3 bg-gaming-darker rounded-lg">
+                    <p class="text-xs text-gray-500">Best for: Late-game waves, Boss fights</p>
+                </div>
+            </div>
+
+            <div class="bg-gaming-card border-2 border-yellow-500/50 rounded-xl p-6 card-hover transition-all duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-gaming-secondary">Titan Slayer</h3>
+                    <span class="text-xs bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded">Legendary</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Anti-Titan specialist. Deals bonus damage to Titan-class monsters and reduces their armor.</p>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Damage:</span>
+                        <span class="text-gaming-highlight">★★★★☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Survivability:</span>
+                        <span class="text-gaming-accent">★★★★☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Utility:</span>
+                        <span class="text-gaming-accent">★★★★★</span>
+                    </div>
+                </div>
+                <div class="mt-4 p-3 bg-gaming-darker rounded-lg">
+                    <p class="text-xs text-gray-500">Best for: Titan waves, Hard/Nightmare modes</p>
+                </div>
+            </div>
+
+            <div class="bg-gaming-card border-2 border-yellow-500/50 rounded-xl p-6 card-hover transition-all duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-gaming-secondary">Arcane Guardian</h3>
+                    <span class="text-xs bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded">Legendary</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Ultimate defensive hero. Creates shields and reflects damage back to attackers.</p>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Damage:</span>
+                        <span class="text-gaming-accent">★★★☆☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Survivability:</span>
+                        <span class="text-gaming-highlight">★★★★★</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Utility:</span>
+                        <span class="text-gaming-highlight">★★★★★</span>
+                    </div>
+                </div>
+                <div class="mt-4 p-3 bg-gaming-darker rounded-lg">
+                    <p class="text-xs text-gray-500">Best for: Protecting base, Sustained waves</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A-Tier Heroes -->
+    <section class="max-w-7xl mx-auto px-4 py-8">
+        <div class="flex items-center gap-3 mb-6">
+            <span class="w-12 h-12 rounded tier-a flex items-center justify-center text-gaming-dark font-bold text-xl">A</span>
+            <h2 class="text-3xl font-bold text-gray-300">A-Tier Heroes</h2>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-gaming-secondary">Flame Caster</h3>
+                    <span class="text-xs bg-silver-500/20 text-gray-300 px-2 py-1 rounded">Epic</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Area damage dealer with burn effects. Great for crowd control on large monster groups.</p>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Damage:</span>
+                        <span class="text-gaming-highlight">★★★★☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Survivability:</span>
+                        <span class="text-gaming-accent">★★☆☆☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Utility:</span>
+                        <span class="text-gaming-accent">★★★☆☆</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-gaming-secondary">Frost Warden</h3>
+                    <span class="text-xs bg-silver-500/20 text-gray-300 px-2 py-1 rounded">Epic</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Slows enemies and provides crowd control. Essential for defensive strategies.</p>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Damage:</span>
+                        <span class="text-gaming-accent">★★★☆☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Survivability:</span>
+                        <span class="text-gaming-accent">★★★☆☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Utility:</span>
+                        <span class="text-gaming-highlight">★★★★☆</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-gaming-secondary">Storm Caller</h3>
+                    <span class="text-xs bg-silver-500/20 text-gray-300 px-2 py-1 rounded">Epic</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Chain lightning ability that jumps between enemies. Excellent for mixed monster compositions.</p>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Damage:</span>
+                        <span class="text-gaming-highlight">★★★★☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Survivability:</span>
+                        <span class="text-gaming-accent">★★☆☆☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Utility:</span>
+                        <span class="text-gaming-accent">★★★☆☆</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- B-Tier Heroes -->
+    <section class="max-w-7xl mx-auto px-4 py-8">
+        <div class="flex items-center gap-3 mb-6">
+            <span class="w-12 h-12 rounded tier-b flex items-center justify-center text-gaming-dark font-bold text-xl">B</span>
+            <h2 class="text-3xl font-bold text-orange-400">B-Tier Heroes</h2>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-gaming-secondary">Battle Monk</h3>
+                    <span class="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded">Rare</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Balanced fighter with moderate damage and decent survivability. Good starter hero.</p>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Damage:</span>
+                        <span class="text-gaming-accent">★★★☆☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Survivability:</span>
+                        <span class="text-gaming-accent">★★★☆☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Utility:</span>
+                        <span class="text-gaming-accent">★★☆☆☆</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-gaming-secondary">Sniper Elite</h3>
+                    <span class="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded">Rare</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Long-range single target damage. Effective against fast enemies but lacks AoE.</p>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Damage:</span>
+                        <span class="text-gaming-highlight">★★★★☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Survivability:</span>
+                        <span class="text-gaming-accent">★☆☆☆☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Utility:</span>
+                        <span class="text-gaming-accent">★★☆☆☆</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-gaming-secondary">Healing Sage</h3>
+                    <span class="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded">Rare</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Support hero that heals units over time. Situational but valuable in long waves.</p>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Damage:</span>
+                        <span class="text-gaming-accent">★☆☆☆☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Survivability:</span>
+                        <span class="text-gaming-accent">★★★☆☆</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Utility:</span>
+                        <span class="text-gaming-highlight">★★★★☆</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gacha Info -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="bg-gaming-card border border-gaming-accent rounded-xl p-8 glow-box">
+            <h2 class="text-2xl font-bold text-gaming-accent mb-4">Hero Gacha System</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-gaming-secondary mb-3">Rarity Rates</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center gap-2"><span class="text-yellow-400">★</span> Legendary: 3%</li>
+                        <li class="flex items-center gap-2"><span class="text-gray-300">★</span> Epic: 12%</li>
+                        <li class="flex items-center gap-2"><span class="text-orange-400">★</span> Rare: 25%</li>
+                        <li class="flex items-center gap-2"><span class="text-green-400">★</span> Common: 60%</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gaming-secondary mb-3">Tips for Gacha</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>Save gems for guaranteed pity pulls</li>
+                        <li>Focus on S-tier heroes for meta teams</li>
+                        <li>Duplicate heroes can be used for star upgrades</li>
+                        <li>Some events offer increased Legendary rates</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gaming-darker border-t border-gaming-border py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gaming-accent font-bold text-xl mb-2">Alliance Tower Defense Wiki</p>
+            <p class="text-gray-500 text-sm mb-4">Your ultimate guide to conquering the monster horde</p>
+            <p class="text-gray-600 text-xs">Not affiliated with Roblox Corporation. Fan-made wiki site.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategy - Alliance Tower Defense Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gaming: {
+                            dark: '#0f0f1a',
+                            darker: '#080810',
+                            accent: '#ff6b35',
+                            secondary: '#f7931e',
+                            highlight: '#ff4444',
+                            card: '#1a1a2e',
+                            border: '#2d2d44'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #0f0f1a 100%);
+        }
+        .glow-text {
+            text-shadow: 0 0 10px #ff6b35, 0 0 20px #ff6b35, 0 0 30px #f7931e;
+        }
+        .glow-box {
+            box-shadow: 0 0 15px rgba(255, 107, 53, 0.3), inset 0 0 15px rgba(255, 107, 53, 0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(255, 107, 53, 0.5);
+        }
+    </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body class="min-h-screen text-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gaming-darker border-b border-gaming-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <a href="index.html" class="text-2xl font-bold text-gaming-accent glow-text">ATD Wiki</a>
+                <div class="flex flex-wrap gap-6">
+                    <a href="index.html" class="text-gray-300 hover:text-gaming-accent transition">Home</a>
+                    <a href="heroes.html" class="text-gray-300 hover:text-gaming-accent transition">Heroes</a>
+                    <a href="strategy.html" class="text-gaming-secondary hover:text-gaming-accent transition font-semibold">Strategy</a>
+                    <a href="tips.html" class="text-gray-300 hover:text-gaming-accent transition">Tips</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-gaming-accent/20 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 py-16 relative">
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-gaming-accent glow-text mb-4">Tower Defense Strategies</h1>
+            <p class="text-center text-gray-400 max-w-2xl mx-auto">Master the art of defense with these proven strategies for every game mode and difficulty.</p>
+        </div>
+    </header>
+
+    <!-- Early Game Strategy -->
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+            <span class="text-3xl">🌱</span> Early Game Strategy
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6">
+                <h3 class="text-xl font-bold text-gaming-secondary mb-4">Focus on Economy</h3>
+                <ul class="space-y-3 text-gray-400">
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent">1.</span>
+                        <span>Prioritize coin-generating units in early waves</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent">2.</span>
+                        <span>Don't spend coins on expensive units until you have stable income</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent">3.</span>
+                        <span>Save 500+ coins for the first hero activation</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent">4.</span>
+                        <span>Use starter heroes efficiently before summoning better ones</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6">
+                <h3 class="text-xl font-bold text-gaming-secondary mb-4">Unit Placement Basics</h3>
+                <ul class="space-y-3 text-gray-400">
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent">1.</span>
+                        <span>Place units at chokepoints for maximum efficiency</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent">2.</span>
+                        <span>Never block your own path - monsters need a route</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent">3.</span>
+                        <span>Stack complementary units (slow + damage)</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent">4.</span>
+                        <span>Keep some coins in reserve for emergency upgrades</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid Game Strategy -->
+    <section class="bg-gaming-darker py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+                <span class="text-3xl">⚔️</span> Mid Game Strategy
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gaming-card border border-gaming-border rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-gaming-secondary mb-4">Hero Synergies</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex gap-3">
+                            <span class="text-gaming-highlight">★</span>
+                            <span>Combine damage dealers with crowd control heroes</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gaming-highlight">★</span>
+                            <span>Use Frost Warden to slow, then burst with Shadow Striker</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gaming-highlight">★</span>
+                            <span>Arcane Guardian + high DPS = unbreakable defense</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gaming-highlight">★</span>
+                            <span>Always match hero element to monster weakness</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gaming-card border border-gaming-border rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-gaming-secondary mb-4">Resource Management</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex gap-3">
+                            <span class="text-gaming-highlight">★</span>
+                            <span>Balance unit upgrades with hero investments</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gaming-highlight">★</span>
+                            <span>Upgrade key units to max level before spreading investments</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gaming-highlight">★</span>
+                            <span>Save gems for guaranteed gacha pulls during events</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gaming-highlight">★</span>
+                            <span>Complete daily missions for extra coin income</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Late Game Strategy -->
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+            <span class="text-3xl">👑</span> Late Game Strategy
+        </h2>
+        <div class="bg-gaming-card border border-gaming-accent rounded-xl p-8 glow-box">
+            <h3 class="text-2xl font-bold text-gaming-secondary mb-6">Nightmare Mode Tactics</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold text-gaming-accent mb-3">Titan Counter Strategy</h4>
+                    <p class="text-gray-400 text-sm mb-4">Titans require specialized defense. Deploy Titan Slayer hero immediately when a Titan wave begins. Stack armor reduction debuffs and focus fire.</p>
+                    <ul class="space-y-2 text-gray-500 text-sm">
+                        <li>- Use 2+ anti-Titan units</li>
+                        <li>- Keep Arcane Guardian shield active</li>
+                        <li>- Save ultimate abilities for Titans</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-gaming-accent mb-3">Camera Person Tactics</h4>
+                    <p class="text-gray-400 text-sm mb-4">Camera Person monsters freeze your units. Keep healing units ready and rotate heroes to maintain pressure during freeze periods.</p>
+                    <ul class="space-y-2 text-gray-500 text-sm">
+                        <li>- Healing Sage essential here</li>
+                        <li>- Don't rely on stationary units</li>
+                        <li>- Mobile heroes break camera lock</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-gaming-accent mb-3">Final Wave Survival</h4>
+                    <p class="text-gray-400 text-sm mb-4">The final wave combines all monster types. Stack AoE damage dealers and ensure base shields are maxed before wave 30.</p>
+                    <ul class="space-y-2 text-gray-500 text-sm">
+                        <li>- Max all unit levels</li>
+                        <li>- All S-tier heroes deployed</li>
+                        <li>- 1000+ coin reserve minimum</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map-Specific Strategies -->
+    <section class="bg-gaming-darker py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+                <span class="text-3xl">🗺️</span> Map-Specific Strategies
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gaming-card border border-gaming-border rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-gaming-secondary mb-3">Highway Hell</h3>
+                    <p class="text-gray-400 text-sm mb-4">Long straight path. Place sniper units at both ends for maximum coverage. Use speed boost units to slow fast monsters.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-gaming-darker text-gaming-accent px-2 py-1 rounded">Long chokepoint</span>
+                        <span class="text-xs bg-gaming-darker text-gaming-secondary px-2 py-1 rounded">Sniper meta</span>
+                    </div>
+                </div>
+                <div class="bg-gaming-card border border-gaming-border rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-gaming-secondary mb-3">Forest Maze</h3>
+                    <p class="text-gray-400 text-sm mb-4">Multiple paths with shortcuts. Place units at path convergences. Area damage crucial here for hitting groups.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-gaming-darker text-gaming-accent px-2 py-1 rounded">Multiple paths</span>
+                        <span class="text-xs bg-gaming-darker text-gaming-secondary px-2 py-1 rounded">AoE required</span>
+                    </div>
+                </div>
+                <div class="bg-gaming-card border border-gaming-border rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-gaming-secondary mb-3">Volcano Core</h3>
+                    <p class="text-gray-400 text-sm mb-4">Environmental damage to units. Use fire-resistant units or constant healing. Titans spawn more frequently here.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-gaming-darker text-gaming-accent px-2 py-1 rounded">Hazard map</span>
+                        <span class="text-xs bg-gaming-darker text-gaming-secondary px-2 py-1 rounded">Anti-Titan focus</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Difficulty Guide -->
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+            <span class="text-3xl">🎯</span> Difficulty Progression
+        </h2>
+        <div class="grid md:grid-cols-4 gap-4">
+            <div class="bg-green-900/30 border border-green-600/50 rounded-xl p-6 text-center">
+                <h3 class="text-xl font-bold text-green-400 mb-2">Easy</h3>
+                <p class="text-gray-400 text-sm mb-3">Learn the basics without pressure</p>
+                <ul class="text-gray-500 text-xs text-left space-y-1">
+                    <li>• 20 waves</li>
+                    <li>• 1x monster HP</li>
+                    <li>• Great for新手</li>
+                </ul>
+            </div>
+            <div class="bg-blue-900/30 border border-blue-600/50 rounded-xl p-6 text-center">
+                <h3 class="text-xl font-bold text-blue-400 mb-2">Normal</h3>
+                <p class="text-gray-400 text-sm mb-3">Standard challenge for most players</p>
+                <ul class="text-gray-500 text-xs text-left space-y-1">
+                    <li>• 25 waves</li>
+                    <li>• 2x monster HP</li>
+                    <li>• First Titans appear</li>
+                </ul>
+            </div>
+            <div class="bg-orange-900/30 border border-orange-600/50 rounded-xl p-6 text-center">
+                <h3 class="text-xl font-bold text-orange-400 mb-2">Hard</h3>
+                <p class="text-gray-400 text-sm mb-3">Requires proper team synergy</p>
+                <ul class="text-gray-500 text-xs text-left space-y-1">
+                    <li>• 30 waves</li>
+                    <li>• 4x monster HP</li>
+                    <li>• Camera Person active</li>
+                </ul>
+            </div>
+            <div class="bg-red-900/30 border border-red-600/50 rounded-xl p-6 text-center">
+                <h3 class="text-xl font-bold text-red-400 mb-2">Nightmare</h3>
+                <p class="text-gray-400 text-sm mb-3">Ultimate challenge for veterans</p>
+                <ul class="text-gray-500 text-xs text-left space-y-1">
+                    <li>• 40 waves</li>
+                    <li>• 10x monster HP</li>
+                    <li>• All boss types</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gaming-darker border-t border-gaming-border py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gaming-accent font-bold text-xl mb-2">Alliance Tower Defense Wiki</p>
+            <p class="text-gray-500 text-sm mb-4">Your ultimate guide to conquering the monster horde</p>
+            <p class="text-gray-600 text-xs">Not affiliated with Roblox Corporation. Fan-made wiki site.</p>
+        </div>
+    </footer>
+</body>
+</html>

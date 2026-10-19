@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alliance Tower Defense - Roblox Tower Defense Strategy Game Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gaming: {
+                            dark: '#0f0f1a',
+                            darker: '#080810',
+                            accent: '#ff6b35',
+                            secondary: '#f7931e',
+                            highlight: '#ff4444',
+                            card: '#1a1a2e',
+                            border: '#2d2d44'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #0f0f1a 100%);
+        }
+        .glow-text {
+            text-shadow: 0 0 10px #ff6b35, 0 0 20px #ff6b35, 0 0 30px #f7931e;
+        }
+        .glow-box {
+            box-shadow: 0 0 15px rgba(255, 107, 53, 0.3), inset 0 0 15px rgba(255, 107, 53, 0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(255, 107, 53, 0.5);
+        }
+    </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body class="min-h-screen text-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gaming-darker border-b border-gaming-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <a href="index.html" class="text-2xl font-bold text-gaming-accent glow-text">ATD Wiki</a>
+                <div class="flex flex-wrap gap-6">
+                    <a href="index.html" class="text-gaming-secondary hover:text-gaming-accent transition font-semibold">Home</a>
+                    <a href="heroes.html" class="text-gray-300 hover:text-gaming-accent transition">Heroes</a>
+                    <a href="strategy.html" class="text-gray-300 hover:text-gaming-accent transition">Strategy</a>
+                    <a href="tips.html" class="text-gray-300 hover:text-gaming-accent transition">Tips</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-gaming-accent/20 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 py-20 relative">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 glow-text">ALLIANCE TOWER DEFENSE</h1>
+                <p class="text-xl md:text-2xl text-gaming-secondary mb-4">Defend Against the Monster Horde</p>
+                <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Join millions of players in the ultimate Roblox tower defense experience. Command heroes, deploy units, and protect your base from Camera Person and Titan monsters!</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="px-4 py-2 bg-gaming-card border border-gaming-accent rounded-lg text-gaming-accent">Free to Play</span>
+                    <span class="px-4 py-2 bg-gaming-card border border-gaming-secondary rounded-lg text-gaming-secondary">Multiplayer</span>
+                    <span class="px-4 py-2 bg-gaming-card border border-gaming-highlight rounded-lg text-gaming-highlight">Hero Gacha</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Game Features -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center text-gaming-accent mb-12">Game Features</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <div class="text-4xl mb-4">🏰</div>
+                <h3 class="text-xl font-bold text-gaming-secondary mb-2">Epic Defense</h3>
+                <p class="text-gray-400 text-sm">Build impregnable defenses with strategic unit placement and hero synergies</p>
+            </div>
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <div class="text-4xl mb-4">👹</div>
+                <h3 class="text-xl font-bold text-gaming-secondary mb-2">Monster IP</h3>
+                <p class="text-gray-400 text-sm">Face off against Camera Person and Titan monsters with unique abilities</p>
+            </div>
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <div class="text-4xl mb-4">🎰</div>
+                <h3 class="text-xl font-bold text-gaming-secondary mb-2">Hero Gacha</h3>
+                <p class="text-gray-400 text-sm">Collect powerful heroes through in-game gacha with varying rarities</p>
+            </div>
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <div class="text-4xl mb-4">📊</div>
+                <h3 class="text-xl font-bold text-gaming-secondary mb-2">Leaderboards</h3>
+                <p class="text-gray-400 text-sm">Compete globally and climb rankings with your defense strategies</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Play -->
+    <section class="bg-gaming-darker py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gaming-accent mb-12">How to Play</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 bg-gaming-accent rounded-full flex items-center justify-center font-bold text-gaming-dark text-xl">1</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gaming-secondary mb-2">Choose Your Map</h3>
+                        <p class="text-gray-400">Select from multiple maps with varying difficulties. Each map has unique terrain and monster paths.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 bg-gaming-accent rounded-full flex items-center justify-center font-bold text-gaming-dark text-xl">2</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gaming-secondary mb-2">Deploy Units</h3>
+                        <p class="text-gray-400">Place defensive units along the path to stop waves of monsters from reaching your base.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 bg-gaming-accent rounded-full flex items-center justify-center font-bold text-gaming-dark text-xl">3</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gaming-secondary mb-2">Activate Heroes</h3>
+                        <p class="text-gray-400">Use powerful hero abilities to turn the tide of battle. Each hero has unique skills.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 bg-gaming-accent rounded-full flex items-center justify-center font-bold text-gaming-dark text-xl">4</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gaming-secondary mb-2">Earn Coins</h3>
+                        <p class="text-gray-400">Defeat monsters to earn coins for upgrading units and unlocking new heroes.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 bg-gaming-accent rounded-full flex items-center justify-center font-bold text-gaming-dark text-xl">5</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gaming-secondary mb-2">Upgrade & Progress</h3>
+                        <p class="text-gray-400">Enhance your units' stats and unlock new heroes through the gacha system.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 bg-gaming-accent rounded-full flex items-center justify-center font-bold text-gaming-dark text-xl">6</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gaming-secondary mb-2">Conquer Difficulties</h3>
+                        <p class="text-gray-400">Challenge Easy, Normal, Hard, and Nightmare modes for greater rewards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center text-gaming-accent mb-12">Explore the Wiki</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <a href="heroes.html" class="bg-gaming-card border border-gaming-border rounded-xl p-8 card-hover transition-all duration-300 glow-box">
+                <div class="text-5xl mb-4 text-center">⚔️</div>
+                <h3 class="text-2xl font-bold text-gaming-accent text-center mb-2">Hero Tier List</h3>
+                <p class="text-gray-400 text-center">Discover the best heroes and their rankings</p>
+            </a>
+            <a href="strategy.html" class="bg-gaming-card border border-gaming-border rounded-xl p-8 card-hover transition-all duration-300 glow-box">
+                <div class="text-5xl mb-4 text-center">🧠</div>
+                <h3 class="text-2xl font-bold text-gaming-accent text-center mb-2">Strategies</h3>
+                <p class="text-gray-400 text-center">Master tower defense tactics and formations</p>
+            </a>
+            <a href="tips.html" class="bg-gaming-card border border-gaming-border rounded-xl p-8 card-hover transition-all duration-300 glow-box">
+                <div class="text-5xl mb-4 text-center">💡</div>
+                <h3 class="text-2xl font-bold text-gaming-accent text-center mb-2">Tips & Tricks</h3>
+                <p class="text-gray-400 text-center">Essential tips for beginners and pros</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gaming-darker border-t border-gaming-border py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gaming-accent font-bold text-xl mb-2">Alliance Tower Defense Wiki</p>
+            <p class="text-gray-500 text-sm mb-4">Your ultimate guide to conquering the monster horde</p>
+            <p class="text-gray-600 text-xs">Not affiliated with Roblox Corporation. Fan-made wiki site.</p>
+        </div>
+    </footer>
+</body>
+</html>
