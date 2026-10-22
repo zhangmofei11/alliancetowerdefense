@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alliance Tower Defense Walkthrough - Beginner Progression Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gaming: {
+                            dark: '#0f0f1a',
+                            darker: '#080810',
+                            accent: '#ff6b35',
+                            secondary: '#f7931e',
+                            highlight: '#ff4444',
+                            card: '#1a1a2e',
+                            border: '#2d2d44'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #0f0f1a 100%);
+        }
+        .glow-text {
+            text-shadow: 0 0 10px #ff6b35, 0 0 20px #ff6b35, 0 0 30px #f7931e;
+        }
+        .glow-box {
+            box-shadow: 0 0 15px rgba(255, 107, 53, 0.3), inset 0 0 15px rgba(255, 107, 53, 0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(255, 107, 53, 0.5);
+        }
+    </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-22V24Z9BSJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-22V24Z9BSJ');
+    </script>
+    <meta name="description" content="Alliance Tower Defense walkthrough with a day-1 setup order, wave-by-wave build plan, difficulty unlocks, coin and gem budgets, and boss wave prep.">
+    <meta name="keywords" content="Alliance Tower Defense walkthrough, ATD beginner guide, tower defense progression, wave build order, difficulty unlock guide, boss wave prep, Roblox TD walkthrough">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://alliancetowerdefense.online/#website",
+          "name": "Alliance Tower Defense",
+          "url": "https://alliancetowerdefense.online/",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://alliancetowerdefense.online/walkthrough.html#webpage",
+          "url": "https://alliancetowerdefense.online/walkthrough.html",
+          "name": "Alliance Tower Defense Walkthrough - Beginner Progression Guide",
+          "description": "Alliance Tower Defense walkthrough with a day-1 setup order, wave-by-wave build plan, difficulty unlocks, coin and gem budgets, and boss wave prep.",
+          "isPartOf": {
+            "@id": "https://alliancetowerdefense.online/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://alliancetowerdefense.online/walkthrough.html#breadcrumb"
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://alliancetowerdefense.online/walkthrough.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://alliancetowerdefense.online/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Alliance Tower Defense Walkthrough - Beginner Progression Guide"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="min-h-screen text-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gaming-darker border-b border-gaming-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <a href="index.html" class="text-2xl font-bold text-gaming-accent glow-text">ATD Wiki</a>
+                <div class="flex flex-wrap gap-6">
+                    <a href="index.html" class="text-gray-300 hover:text-gaming-accent transition">Home</a>
+                    <a href="heroes.html" class="text-gray-300 hover:text-gaming-accent transition">Heroes</a>
+                    <a href="strategy.html" class="text-gray-300 hover:text-gaming-accent transition">Strategy</a>
+                    <a href="walkthrough.html" class="text-gaming-secondary hover:text-gaming-accent transition font-semibold">Walkthrough</a>
+                    <a href="tips.html" class="text-gray-300 hover:text-gaming-accent transition">Tips</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-gaming-accent/20 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 py-16 relative">
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-gaming-accent glow-text mb-4">ALLIANCE TOWER DEFENSE WALKTHROUGH</h1>
+            <p class="text-center text-gray-400 max-w-2xl mx-auto">A step-by-step beginner progression guide: what to build, what to unlock, and how to spend every coin and gem from your first wave to the final boss.</p>
+        </div>
+    </header>
+
+    <!-- Day 1 Setup -->
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+            <span class="text-3xl">🗓️</span> Day 1 Setup Order
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <h3 class="text-xl font-bold text-gaming-secondary mb-4">Before You Queue</h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">1.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Clear the tutorial once</strong>
+                            <p class="text-sm mt-1">The tutorial hands you a Battle Monk and a few coins. Learn where unit slots open first.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">2.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Pull on Common, not Rare</strong>
+                            <p class="text-sm mt-1">Cheap pulls stock you with Rare and Common heroes, which is all a Day 1 build needs.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">3.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Fill every open unit slot</strong>
+                            <p class="text-sm mt-1">Extra slots are wasted damage. Expand them as soon as the cost is under 150 coins.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <h3 class="text-xl font-bold text-gaming-secondary mb-4">First Five Minutes In-Run</h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">1.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Place one unit on the first corner</strong>
+                            <p class="text-sm mt-1">One unit at the first turn of the path out-damages two units on a straight lane.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">2.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Add a second unit behind it</strong>
+                            <p class="text-sm mt-1">One slow unit in front, one damage unit behind, so slow lands before the burst.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">3.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Hold 40% of your coins in reserve</strong>
+                            <p class="text-sm mt-1">That reserve is your emergency fund for a leaked wave or an unplanned slot.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Build Plan -->
+    <section class="bg-gaming-darker py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+                <span class="text-3xl">🌊</span> Wave-by-Wave Build Plan
+            </h2>
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 overflow-x-auto">
+                <table class="w-full text-sm text-left">
+                    <thead>
+                        <tr class="text-gaming-accent border-b border-gaming-border">
+                            <th class="py-3 pr-4">Waves</th>
+                            <th class="py-3 pr-4">Coin Target</th>
+                            <th class="py-3 pr-4">Build Focus</th>
+                            <th class="py-3">Hero Play</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-400">
+                        <tr class="border-b border-gaming-border/60">
+                            <td class="py-3 pr-4 font-semibold text-gray-300">1-5</td>
+                            <td class="py-3 pr-4">0-300</td>
+                            <td class="py-3 pr-4">Two starter units, first corner only</td>
+                            <td class="py-3">Save abilities for wave 5</td>
+                        </tr>
+                        <tr class="border-b border-gaming-border/60">
+                            <td class="py-3 pr-4 font-semibold text-gray-300">6-10</td>
+                            <td class="py-3 pr-4">300-800</td>
+                            <td class="py-3 pr-4">First Frost Warden or slow unit</td>
+                            <td class="py-3">Frost Warden on the grouped wave</td>
+                        </tr>
+                        <tr class="border-b border-gaming-border/60">
+                            <td class="py-3 pr-4 font-semibold text-gray-300">11-15</td>
+                            <td class="py-3 pr-4">800-1,400</td>
+                            <td class="py-3 pr-4">Second lane branch, AoE unit</td>
+                            <td class="py-3">Flame Caster into the pack</td>
+                        </tr>
+                        <tr class="border-b border-gaming-border/60">
+                            <td class="py-3 pr-4 font-semibold text-gray-300">16-20</td>
+                            <td class="py-3 pr-4">1,400-2,200</td>
+                            <td class="py-3 pr-4">Max the primary damage dealer</td>
+                            <td class="py-3">Arcane Guardian shield up</td>
+                        </tr>
+                        <tr class="border-b border-gaming-border/60">
+                            <td class="py-3 pr-4 font-semibold text-gray-300">21-25</td>
+                            <td class="py-3 pr-4">2,200-3,000</td>
+                            <td class="py-3 pr-4">Third chokepoint and anti-armor</td>
+                            <td class="py-3">Titan Slayer on every Titan</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 pr-4 font-semibold text-gray-300">26-30</td>
+                            <td class="py-3 pr-4">3,000-4,000</td>
+                            <td class="py-3 pr-4">Full map coverage, healing support</td>
+                            <td class="py-3">All abilities, no rotations left</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-gray-500 text-sm mt-4">Coin targets are cumulative totals earned, not money in the bank. If a wave leaks, fall back a row and rebuild.</p>
+        </div>
+    </section>
+
+    <!-- Map Reading -->
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+            <span class="text-3xl">🗺️</span> Reading Map Layouts and Path Corners
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <h3 class="text-xl font-bold text-gaming-secondary mb-3">Corners</h3>
+                <p class="text-gray-400 text-sm">A monster crossing a corner turns and stops overlapping the unit that hit it, wasting range. Place the unit on the inside of the turn so its range circle covers the exit tile.</p>
+            </div>
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <h3 class="text-xl font-bold text-gaming-secondary mb-3">Convergences</h3>
+                <p class="text-gray-400 text-sm">When two lanes merge, one AoE unit at the merge point out-damages four single-target units on separate lanes. This is the best placement on Forest Maze maps.</p>
+            </div>
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <h3 class="text-xl font-bold text-gaming-secondary mb-3">Long Straights</h3>
+                <p class="text-gray-400 text-sm">On Highway Hell maps, coverage wins. Spread long-range units down the lane instead of clustering them. A Sniper Elite at the far end fires three times before monsters reach the front line.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Difficulty Progression -->
+    <section class="bg-gaming-darker py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+                <span class="text-3xl">🎯</span> Difficulty Progression and Unlocks
+            </h2>
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 overflow-x-auto">
+                <table class="w-full text-sm text-left">
+                    <thead>
+                        <tr class="text-gaming-accent border-b border-gaming-border">
+                            <th class="py-3 pr-4">Tier</th>
+                            <th class="py-3 pr-4">Waves</th>
+                            <th class="py-3 pr-4">What Unlocks</th>
+                            <th class="py-3">Ready When</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-400">
+                        <tr class="border-b border-gaming-border/60">
+                            <td class="py-3 pr-4 font-semibold text-gray-300">Easy</td>
+                            <td class="py-3 pr-4">20</td>
+                            <td class="py-3 pr-4">Basic heroes, first Rare unit slots</td>
+                            <td class="py-3">You finish without a leak</td>
+                        </tr>
+                        <tr class="border-b border-gaming-border/60">
+                            <td class="py-3 pr-4 font-semibold text-gray-300">Normal</td>
+                            <td class="py-3 pr-4">25</td>
+                            <td class="py-3 pr-4">Epic gacha banners, Frost Warden copies</td>
+                            <td class="py-3">One Epic hero, 2,000 coin runs</td>
+                        </tr>
+                        <tr class="border-b border-gaming-border/60">
+                            <td class="py-3 pr-4 font-semibold text-gray-300">Hard</td>
+                            <td class="py-3 pr-4">30</td>
+                            <td class="py-3 pr-4">Camera Person waves, extra unit slots</td>
+                            <td class="py-3">Slow plus burst combo works</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 pr-4 font-semibold text-gray-300">Nightmare</td>
+                            <td class="py-3 pr-4">40</td>
+                            <td class="py-3 pr-4">Legendary banner, Arcane Guardian shards</td>
+                            <td class="py-3">A Titan dies in under 10 seconds</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget -->
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+            <span class="text-3xl">💰</span> Coin and Gem Budget by Phase
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <h3 class="text-xl font-bold text-gaming-secondary mb-4">Coins</h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">1.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Phase one: 0-800 coins</strong>
+                            <p class="text-sm mt-1">Two starter units plus one slow unit. Coins beyond this are hard to replace after a leak.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">2.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Phase two: 800-2,200 coins</strong>
+                            <p class="text-sm mt-1">One maxed AoE damage unit and a second branch. Upgrade the unit that already kills things, not a weak new one.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">3.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Phase three: 2,200+ coins</strong>
+                            <p class="text-sm mt-1">Full map coverage, anti-armor support, and a 1,000 coin reserve into the final wave.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 card-hover transition-all duration-300">
+                <h3 class="text-xl font-bold text-gaming-secondary mb-4">Gems</h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">1.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">Under 500 gems: no spending</strong>
+                            <p class="text-sm mt-1">Gems this small should sit untouched. Skipping waves at 10 gems each burns a whole evening for two minutes.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">2.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">500-1,200: unit slots only</strong>
+                            <p class="text-sm mt-1">Extra slots give permanent returns on every run. They beat a single gacha pull.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gaming-accent text-xl">3.</span>
+                        <div>
+                            <strong class="text-gaming-secondary">1,200+: guaranteed pull</strong>
+                            <p class="text-sm mt-1">Hold the gem total for a guaranteed S-tier pull. Only then do skips make sense.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alliances -->
+    <section class="bg-gaming-darker py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+                <span class="text-3xl">🤝</span> Where Alliances and Team Features Fit In
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gaming-card border border-gaming-border rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-gaming-secondary mb-4">Alliance Contribution</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex gap-3">
+                            <span class="text-gaming-accent">★</span>
+                            <span>Alliance checkpoints hand out extra unit slots or coin bonuses, so join one early.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gaming-accent">★</span>
+                            <span>Coordinated bosses mean members hit the same target, which is how alliance damage milestones clear.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gaming-accent">★</span>
+                            <span>Alliance gacha tickets pool progress across the roster, so a group reaches S-tier pulls faster.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gaming-card border border-gaming-border rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-gaming-secondary mb-4">Team Loadouts</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex gap-3">
+                            <span class="text-gaming-accent">★</span>
+                            <span>Keep two saved loadouts: one slow-and-burst for early waves, one all-burst for the boss wave.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gaming-accent">★</span>
+                            <span>Rotate the support slot so Arcane Guardian is never in a loadout that lacks damage to feed it.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gaming-accent">★</span>
+                            <span>Never leave a unit slot empty in a shared loadout, because allies inherit it too.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boss Prep -->
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+            <span class="text-3xl">👹</span> Boss Wave Preparation
+        </h2>
+        <div class="bg-gaming-card border border-gaming-accent rounded-xl p-8 glow-box">
+            <h3 class="text-2xl font-bold text-gaming-secondary mb-6">The Three Bosses</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold text-gaming-accent mb-3">Titan</h4>
+                    <p class="text-gray-400 text-sm mb-4">Armored and slow, but it hits for enormous damage. Bring Titan Slayer to strip armor and keep Arcane Guardian shielding the base so one mistake does not end the run.</p>
+                    <ul class="space-y-2 text-gray-500 text-sm">
+                        <li>- 2+ anti-armor units</li>
+                        <li>- Kill it in under 10 seconds</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-gaming-accent mb-3">Camera Person</h4>
+                    <p class="text-gray-400 text-sm mb-4">Freezes your units in place, which is worse than raw damage. Mobile heroes break the lock, and healing keeps frozen units alive while they thaw.</p>
+                    <ul class="space-y-2 text-gray-500 text-sm">
+                        <li>- Keep one mobile hero ready</li>
+                        <li>- Healing Sage active</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-gaming-accent mb-3">Final Wave</h4>
+                    <p class="text-gray-400 text-sm mb-4">The last wave mixes every monster type and punishes gaps. Stack AoE damage, keep a coin reserve for a panic upgrade, and skip only earlier waves.</p>
+                    <ul class="space-y-2 text-gray-500 text-sm">
+                        <li>- 1,000 coin reserve</li>
+                        <li>- Every unit slot filled</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestone Checklist -->
+    <section class="bg-gaming-darker py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gaming-accent mb-8 flex items-center gap-3">
+                <span class="text-3xl">✅</span> Milestone Checklist
+            </h2>
+            <div class="bg-gaming-card border border-gaming-border rounded-xl p-6 overflow-x-auto">
+                <table class="w-full text-sm text-left">
+                    <thead>
+                        <tr class="text-gaming-accent border-b border-gaming-border">
+                            <th class="py-3 pr-4">Milestone</th>
+                            <th class="py-3 pr-4">Target</th>
+                            <th class="py-3">Reward</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-400">
+                        <tr class="border-b border-gaming-border/60">
+                            <td class="py-3 pr-4 font-semibold text-gray-300">First clear</td>
+                            <td class="py-3 pr-4">Easy, no leaks</td>
+                            <td class="py-3">Rare unit slot</td>
+                        </tr>
+                        <tr class="border-b border-gaming-border/60">
+                            <td class="py-3 pr-4 font-semibold text-gray-300">Ten runs</td>
+                            <td class="py-3 pr-4">Easy and Normal mixed</td>
+                            <td class="py-3">Frost Warden copy</td>
+                        </tr>
+                        <tr class="border-b border-gaming-border/60">
+                            <td class="py-3 pr-4 font-semibold text-gray-300">Epic roster</td>
+                            <td class="py-3 pr-4">Three Epic heroes</td>
+                            <td class="py-3">Extra unit slot</td>
+                        </tr>
+                        <tr class="border-b border-gaming-border/60">
+                            <td class="py-3 pr-4 font-semibold text-gray-300">Hard clear</td>
+                            <td class="py-3 pr-4">30 waves, Camera Person handled</td>
+                            <td class="py-3">Legendary banner access</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 pr-4 font-semibold text-gray-300">Nightmare clear</td>
+                            <td class="py-3 pr-4">40 waves, all bosses</td>
+                            <td class="py-3">Arcane Guardian shards</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-gray-500 text-sm mt-4">Work the checklist in order, because each milestone shortens every run that follows it.</p>
+        </div>
+    </section>
+
+    <!-- Adsterra Ads -->
+    <script async="async" data-cfasync="false" src="https://bauval.org/21/7d5f4aa32eb7429257659a2a3a8d745d"></script>
+    <div id="container-7d5f4aa32eb7429257659a2a3a8d745d"></div>
+
+    <script data-cfasync="false" src="https://bauval.org/14/7d968d3e11f8ae8fcdd49cd55d7dc597"></script>
+
+    <script>
+      atOptions = {
+        'key' : '89bd6d29fce3498664b6d54b41c8dd13',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script src="https://bauval.org/22/89bd6d29fce3498664b6d54b41c8dd13"></script>
+
+    <!-- Footer -->
+    <footer class="bg-gaming-darker border-t border-gaming-border py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gaming-accent font-bold text-xl mb-2">Alliance Tower Defense Wiki</p>
+            <p class="text-gray-500 text-sm mb-4">Your ultimate guide to conquering the monster horde</p>
+            <p class="text-gray-600 text-xs">Not affiliated with Roblox Corporation. Fan-made wiki site.</p>
+        </div>
+
+    <!-- Related Articles -->
+    <section class="max-w-6xl mx-auto py-8 px-4 border-t border-gaming-border">
+        <h3 class="text-2xl font-bold mb-4 text-gaming-accent">You Might Also Like</h3>
+        <div class="grid md:grid-cols-3 gap-4">
+        <a href="index.html" class="block p-4 bg-gaming-card border border-gaming-border rounded-lg hover:bg-gaming-accent/10 transition">
+            <span class="font-semibold text-gray-300">→ Alliance Tower Defense - Roblox Tower Defense Strategy Game Wiki</span>
+        </a>
+        <a href="heroes.html" class="block p-4 bg-gaming-card border border-gaming-border rounded-lg hover:bg-gaming-accent/10 transition">
+            <span class="font-semibold text-gray-300">→ Heroes - Alliance Tower Defense Wiki</span>
+        </a>
+        <a href="strategy.html" class="block p-4 bg-gaming-card border border-gaming-border rounded-lg hover:bg-gaming-accent/10 transition">
+            <span class="font-semibold text-gray-300">→ Strategy - Alliance Tower Defense Wiki</span>
+        </a>
+        <a href="tips.html" class="block p-4 bg-gaming-card border border-gaming-border rounded-lg hover:bg-gaming-accent/10 transition">
+            <span class="font-semibold text-gray-300">→ Tips & Tricks - Alliance Tower Defense Wiki</span>
+        </a>
+        </div>
+    </section>
+</footer>
+</body>
+</html>
